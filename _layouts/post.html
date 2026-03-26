@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<style>
+  /* 모든 포스트에 적용될 여백과 줄 간격 */
+  .post-content, article, .content {
+    padding-left: 35px !important;  /* 왼쪽 여백 */
+    padding-right: 35px !important; /* 오른쪽 여백 */
+    line-height: 1.8;               /* 줄 간격 */
+    word-break: keep-all;           /* 한글 끊김 방지 */
+  }
+  
+  /* 제목이 너무 붙어있지 않게 여백 추가 */
+  h2, h3 {
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+  }
+</style>
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
