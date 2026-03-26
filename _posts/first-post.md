@@ -9,7 +9,8 @@ categories: AI Study
 
 안녕하세요.
 
-이 블로그는 GitHub Pages와 Jekyll로 만든 개인 블로그입니다.
+이 블로그는 개발자 입문,
+초보개발자 Areum의 개인 블로그입니다.
 
 앞으로
 
@@ -18,4 +19,4 @@ categories: AI Study
 - 데이터 분석
 - 프로젝트 기록
 
-을 정리할 예정입니다.
+등에 대해서 꾸준히 기록해 볼 예정입니다.
