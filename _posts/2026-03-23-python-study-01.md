@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "파이썬 수업 제목"
+title: "첫번째 파이썬 수업"
 date: 2026-03-23 10:00:00 +0900
 categories: [python]
 ---
