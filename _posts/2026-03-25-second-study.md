@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "두 번째 학습 기록"
-date: 2026-03-27 10:00:00 +0900
+date: 2026-03-25 10:00:00 +0900
 categories: [programming-language]
 ---
 
