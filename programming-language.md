@@ -1,47 +1,51 @@
 ---
 layout: default
-title: Programming language
+title: Programming Language
 permalink: /programming-language/
 ---
 
-# Programming Language 공부 기록
+# 📚 Programming Language 
 
-이 페이지는 `programming-language` 카테고리로 분류된 모든 학습 기록을 보여주는 게시판입니다.
+언어별 학습내용 기록
+
+### 🔍 언어별 세부 카테고리
+* [🐍 **Python** 공부 기록 보러가기]({{ '/programming-language/python/' | relative_url }})
+* [🌐 **HTML & CSS** 공부 기록 보러가기]({{ '/programming-language/html-css/' | relative_url }})
+* [💻 **C Language** 공부 기록 보러가기]({{ '/programming-language/c-language/' | relative_url }})
+* [☕ **Java** 공부 기록 보러가기]({{ '/programming-language/java/' | relative_url }})
+* [📁 **기타 언어** 공부 기록 보러가기]({{ '/programming-language/others/' | relative_url }})
+
+---
+
+### 📝 전체 최근 글 목록 (최신순)
+이 아래에는 언어별로 기록한 글이 통합되어 표현
 
 <div class="post-container">
   {% for post in site.categories.programming-language %}
-    <article style="margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px;">
-      <header>
-        <span style="color: #666; font-size: 0.9rem;">{{ post.date | date: "%Y년 %m월 %d일" }}</span>
-        <h2 style="margin: 10px 0;">
-          <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #007bff; font-size: 1.5rem;">
-            {{ post.title }}
-          </a>
-        </h2>
-      </header>
-      
-      <div style="color: #444; line-height: 1.6;">
-        {{ post.excerpt | strip_html | truncate: 160 }}
-      </div>
-      
-      <a href="{{ post.url | relative_url }}" style="display: inline-block; margin-top: 10px; color: #007bff; font-weight: bold; text-decoration: none;">
-        더 읽어보기 →
-      </a>
+    <article style="margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 15px;">
+      <span style="color: #666; font-size: 0.9rem;">{{ post.date | date: "%Y년 %m월 %d일" }}</span>
+      <h2 style="margin: 5px 0;">
+        <a href="{{ post.url | relative_url }}" style="text-decoration: none; color: #007bff;">{{ post.title }}</a>
+      </h2>
     </article>
-  {% else %}
-    <p style="padding: 20px; background: #f9f9f9; border-radius: 8px;">
-      아직 등록된 포스트가 없습니다. <code>_posts</code> 폴더에 카테고리를 <code>programming-language</code>로 설정한 글을 작성해 보세요!
-    </p>
   {% endfor %}
 </div>
 
 <style>
   .post-container {
     max-width: 800px;
-    margin: 30px auto;
+    margin: 20px 0;
   }
-</article:hover h2 a {
-    color: #0056b3 !important;
-    text-decoration: underline !important;
+  h3 {
+    margin-top: 30px;
+    color: #333;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
   }
 </style>
