@@ -1,4 +1,7 @@
 title: A-reum Blog
 description: AI / Programming / Data Analysis Study Blog
-theme: jekyll-theme-cayman
 markdown: kramdown
+permalink: /:categories/:title/
+
+plugins:
+  - jekyll-feed

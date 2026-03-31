@@ -2,24 +2,30 @@
 layout: default
 ---
 
-<style>
-  /* 모든 포스트에 적용될 여백과 줄 간격 */
-  .post-content, article, .content {
-    padding-left: 35px !important;  /* 왼쪽 여백 */
-    padding-right: 35px !important; /* 오른쪽 여백 */
-    line-height: 1.8;               /* 줄 간격 */
-    word-break: keep-all;           /* 한글 끊김 방지 */
-  }
-  
-  /* 제목이 너무 붙어있지 않게 여백 추가 */
-  h2, h3 {
-    margin-top: 40px !important;
-    margin-bottom: 20px !important;
-  }
-</style>
-
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <header class="post-header">
+    <div class="post-meta">
+      {% assign cat = page.categories[0] %}
+      {% if cat %}
+        <span class="tag tag-{{ cat }}">{{ cat }}</span>
+      {% endif %}
+      <time class="post-date">{{ page.date | date: "%Y. %m. %d" }}</time>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.tags and page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}
+        <span class="post-tag">#{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% if page.velog_url %}
+    <a class="velog-link" href="{{ page.velog_url }}" target="_blank" rel="noopener">Velog에서 보기 →</a>
+    {% endif %}
+  </header>
+
+  <div class="post-divider"></div>
+
   <div class="post-content">
     {{ content }}
   </div>
