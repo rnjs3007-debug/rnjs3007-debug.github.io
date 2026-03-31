@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Home
+permalink: /
 ---
 <div style="max-width:860px;margin:0 auto;padding:48px 32px 32px;font-family:'Noto Sans KR',sans-serif;">
   <div style="margin-bottom:40px;">

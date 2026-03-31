@@ -2,6 +2,11 @@ title: A-reum Blog
 description: AI / Programming / Data Analysis Study Blog
 markdown: kramdown
 permalink: /:categories/:title/
-
 plugins:
   - jekyll-feed
+
+defaults:
+  - scope:
+      path: "index.md"
+    values:
+      permalink: /
