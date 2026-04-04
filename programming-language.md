@@ -11,27 +11,27 @@ permalink: /programming-language/
   </div>
   <p style="font-size:12px;color:#aaa;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:16px;">언어별 카테고리</p>
   <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:48px;">
-    <a href="/python/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
+    <a href="/programming-language/python/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
       <div style="width:36px;height:36px;border-radius:8px;background:#EAF3DE;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px;">🐍</div>
       <div style="font-size:14px;font-weight:500;color:#37352f;margin-bottom:4px;">Python</div>
       <div style="font-size:12px;color:#aaa;">파이썬 기초 · 라이브러리</div>
     </a>
-    <a href="/html-css/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
+    <a href="/programming-language/html-css/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
       <div style="width:36px;height:36px;border-radius:8px;background:#FAEEDA;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px;">🌐</div>
       <div style="font-size:14px;font-weight:500;color:#37352f;margin-bottom:4px;">HTML & CSS</div>
       <div style="font-size:12px;color:#aaa;">웹 기초 · 스타일링</div>
     </a>
-    <a href="/c-language/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
+    <a href="/programming-language/c-language/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
       <div style="width:36px;height:36px;border-radius:8px;background:#E6F1FB;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px;">💻</div>
       <div style="font-size:14px;font-weight:500;color:#37352f;margin-bottom:4px;">C Language</div>
       <div style="font-size:12px;color:#aaa;">C언어 기초 · 포인터</div>
     </a>
-    <a href="/java/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
+    <a href="/programming-language/java/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
       <div style="width:36px;height:36px;border-radius:8px;background:#FAECE7;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px;">☕</div>
       <div style="font-size:14px;font-weight:500;color:#37352f;margin-bottom:4px;">Java</div>
       <div style="font-size:12px;color:#aaa;">자바 기초 · 객체지향</div>
     </a>
-    <a href="/etc/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
+    <a href="/programming-language/others/" style="text-decoration:none;border:0.5px solid #e0e0e0;border-radius:12px;padding:20px;display:block;">
       <div style="width:36px;height:36px;border-radius:8px;background:#F1EFE8;display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:12px;">📁</div>
       <div style="font-size:14px;font-weight:500;color:#37352f;margin-bottom:4px;">기타 언어</div>
       <div style="font-size:12px;color:#aaa;">기타 학습 기록</div>
