@@ -2,7 +2,7 @@
 layout: post
 title: "[C언어] 반복문 : for, while, do~while을 언제 써야 할까?"
 date: 2026-04-01 13:24:31 +0900
-categories: [etc]
+categories: [c-language]
 tags: []
 velog_url: https://velog.io/@addung/C%EC%96%B8%EC%96%B4-%EB%B0%98%EB%B3%B5%EB%AC%B8-for-while-dowhile%EC%9D%84-%EC%96%B8%EC%A0%9C-%EC%8D%A8%EC%95%BC-%ED%95%A0%EA%B9%8C
 ---
