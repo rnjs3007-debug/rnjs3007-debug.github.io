@@ -1,32 +1,78 @@
 ---
-layout: default
 ---
-
-<article class="post">
-  <header class="post-header">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Noto Sans KR',sans-serif;background:#fff;color:#37352f;line-height:1.8;}
+    a{text-decoration:none;color:inherit;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;border-bottom:1px solid #e0e0e0;background:#fff;}
+    header .logo{font-size:16px;font-weight:700;color:#37352f;}
+    header nav{display:flex;gap:4px;}
+    header nav a{font-size:13px;color:#666;padding:5px 10px;border-radius:6px;}
+    header nav a:hover{background:#f1f1ef;}
+    .post-wrap{max-width:720px;margin:0 auto;padding:48px 32px 64px;}
+    .post-meta{display:flex;align-items:center;gap:10px;margin-bottom:32px;}
+    .post-tag{font-size:11px;padding:2px 8px;border-radius:4px;font-weight:500;}
+    .tag-python{background:#EAF3DE;color:#3B6D11;}
+    .tag-c-language{background:#E6F1FB;color:#185FA5;}
+    .tag-html-css{background:#FAEEDA;color:#854F0B;}
+    .tag-java{background:#FAECE7;color:#993C1D;}
+    .tag-ai-study{background:#EEEDFE;color:#3C3489;}
+    .tag-etc{background:#F1EFE8;color:#5F5E5A;}
+    .post-date{font-size:13px;color:#aaa;}
+    .post-title{font-size:28px;font-weight:700;letter-spacing:-0.5px;margin-bottom:32px;line-height:1.4;}
+    .post-content{font-size:16px;line-height:1.9;color:#37352f;}
+    .post-content h1,.post-content h2,.post-content h3,.post-content h4{font-weight:700;margin:2em 0 0.8em;line-height:1.4;}
+    .post-content h1{font-size:24px;}
+    .post-content h2{font-size:20px;padding-bottom:8px;border-bottom:1px solid #e0e0e0;}
+    .post-content h3{font-size:17px;}
+    .post-content p{margin-bottom:1.2em;}
+    .post-content ul,.post-content ol{padding-left:1.8em;margin-bottom:1.2em;}
+    .post-content li{margin-bottom:0.4em;}
+    .post-content code{font-family:'SFMono-Regular',Consolas,monospace;font-size:14px;background:#f1f1ef;padding:2px 6px;border-radius:4px;}
+    .post-content pre{background:#1e1e2e;border-radius:8px;padding:20px;margin:1.5em 0;overflow-x:auto;}
+    .post-content pre code{background:none;color:#cdd6f4;font-size:14px;padding:0;}
+    .post-content blockquote{border-left:3px solid #e0e0e0;padding-left:16px;color:#888;margin:1.5em 0;}
+    .post-content img{max-width:100%;border-radius:8px;margin:1em 0;}
+    .post-content table{width:100%;border-collapse:collapse;margin:1.5em 0;font-size:14px;}
+    .post-content table th,.post-content table td{padding:10px 14px;border:1px solid #e0e0e0;}
+    .post-content table th{background:#f8f8f6;font-weight:500;}
+    .post-content hr{border:none;border-top:1px solid #e0e0e0;margin:2em 0;}
+    .post-content a{color:#1D9E75;text-decoration:underline;}
+    .back-link{display:inline-block;margin-top:48px;font-size:13px;color:#aaa;}
+    .back-link:hover{color:#37352f;}
+    footer{text-align:center;font-size:12px;color:#aaa;border-top:0.5px solid #e0e0e0;padding:20px 32px;margin-top:32px;}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" class="logo">A-reum Blog</a>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/programming-language/">언어</a>
+      <a href="/ai-study/">AI</a>
+      <a href="/data-analysis/">데이터</a>
+      <a href="/projects/">프로젝트</a>
+      <a href="/about/">소개</a>
+    </nav>
+  </header>
+  <div class="post-wrap">
     <div class="post-meta">
-      {% assign cat = page.categories[0] %}
-      {% if cat %}
-        <span class="tag tag-{{ cat }}">{{ cat }}</span>
-      {% endif %}
-      <time class="post-date">{{ page.date | date: "%Y. %m. %d" }}</time>
+      <span class="post-tag tag-{{ page.categories | first }}">{{ page.categories | first }}</span>
+      <span class="post-date">{{ page.date | date: "%Y. %m. %d" }}</span>
     </div>
     <h1 class="post-title">{{ page.title }}</h1>
-    {% if page.tags and page.tags.size > 0 %}
-    <div class="post-tags">
-      {% for tag in page.tags %}
-        <span class="post-tag">#{{ tag }}</span>
-      {% endfor %}
+    <div class="post-content">
+      {{ content }}
     </div>
-    {% endif %}
-    {% if page.velog_url %}
-    <a class="velog-link" href="{{ page.velog_url }}" target="_blank" rel="noopener">Velog에서 보기 →</a>
-    {% endif %}
-  </header>
-
-  <div class="post-divider"></div>
-
-  <div class="post-content">
-    {{ content }}
+    <a href="javascript:history.back()" class="back-link">← 뒤로 가기</a>
   </div>
-</article>
+  <footer>© 2026 A-reum Blog</footer>
+</body>
+</html>
