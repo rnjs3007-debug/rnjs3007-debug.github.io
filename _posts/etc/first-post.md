@@ -2,7 +2,7 @@
 layout: default
 title: "첫 번째 글"
 date: 2026-03-09
-categories: AI Study
+categories: [etc]
 ---
 
 # 첫 번째 블로그 글
