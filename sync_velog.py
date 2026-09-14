@@ -6,21 +6,21 @@ from datetime import datetime, timezone, timedelta
 VELOG_RSS = "https://v2.velog.io/rss/@addung"
 POSTS_DIR = "_posts"
 
-TAG_MAP = [
-    (["python"],                              "python"),
-    (["c언어", "c language", "c-language"],   "c-language"),
-    (["html", "css"],                         "html-css"),
-    (["java"],                                "java"),
-    (["ai", "머신러닝", "딥러닝", "machine learning", "deep learning"], "ai-study"),
-    (["데이터분석", "data analysis", "pandas"], "data-analysis"),
+CATEGORY_MAP = [
+    (["bikeeyes", "한이음", "자전거", "노면", "dcc"],                         "projects"),
+    (["yolo", "cnn", "딥러닝", "머신러닝", "segmentation", "데이터셋"],         "ai"),
+    (["stm32", "임베디드", "gpio", "펌웨어"],                                 "embedded"),
+    (["html", "css", "javascript", "자바스크립트", "nodejs", "node.js", "express", "ejs", "dom"], "web"),
+    (["python", "파이썬", "tkinter", "pyqt"],                                "python"),
+    (["c언어", "c language", "c-language", "포인터", "구조체"],               "c-language"),
 ]
 
 
-def map_category(tags: list[str]) -> str:
-    tags_lower = [t.lower() for t in tags]
-    for keywords, category in TAG_MAP:
+def map_category(title: str, body: str = "") -> str:
+    text = title.lower()
+    for keywords, category in CATEGORY_MAP:
         for kw in keywords:
-            if any(kw in tag for tag in tags_lower):
+            if kw in text:
                 return category
     return "etc"
 
@@ -36,7 +36,9 @@ def slugify(title: str) -> str:
 def slug_exists(slug: str) -> bool:
     for root, _, files in os.walk(POSTS_DIR):
         for fname in files:
-            if slug in fname:
+            # filename format: YYYY-MM-DD-{slug}.md  (date prefix is 11 chars)
+            name = fname[:-3] if fname.endswith(".md") else fname
+            if name[11:] == slug:
                 return True
     return False
 
@@ -94,8 +96,9 @@ def main():
         tags  = [t.term for t in entry.get("tags", [])]
         dt    = parse_date(entry)
 
-        slug     = slugify(title)
-        category = map_category(tags)
+        slug = slugify(title)
+        body = extract_body(entry)
+        category = map_category(title, body)
 
         if slug_exists(slug):
             print(f"  [skip] already exists: {slug}")
@@ -109,7 +112,6 @@ def main():
         filepath = os.path.join(target_dir, filename)
 
         frontmatter = build_frontmatter(title, date_str, category, tags, link)
-        body        = extract_body(entry)
 
         with open(filepath, "w", encoding="utf-8") as f:
             f.write(frontmatter + body)
