@@ -1,0 +1,21 @@
+projects:
+  bg: "FAECE7"
+  fg: "993C1D"
+ai:
+  bg: "EEEDFE"
+  fg: "3C3489"
+embedded:
+  bg: "E1F5EE"
+  fg: "1B6B47"
+web:
+  bg: "FAEEDA"
+  fg: "854F0B"
+python:
+  bg: "EAF3DE"
+  fg: "3B6D11"
+c-language:
+  bg: "E6F1FB"
+  fg: "185FA5"
+etc:
+  bg: "F1EFE8"
+  fg: "5F5E5A"
