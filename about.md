@@ -39,6 +39,10 @@ permalink: /about/
         <td style="padding:10px 14px;border:1px solid #e0e0e0;">KLUE-BERT 다중 레이블 분류</td>
       </tr>
       <tr>
+        <td style="padding:10px 14px;border:1px solid #e0e0e0;">오디오</td>
+        <td style="padding:10px 14px;border:1px solid #e0e0e0;">음성 특징 추출 및 화자·증상 분류 (진행 중)</td>
+      </tr>
+      <tr>
         <td style="padding:10px 14px;border:1px solid #e0e0e0;">언어</td>
         <td style="padding:10px 14px;border:1px solid #e0e0e0;">Python, C</td>
       </tr>
