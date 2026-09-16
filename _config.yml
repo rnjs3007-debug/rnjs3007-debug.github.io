@@ -1,5 +1,7 @@
 title: A-reum Blog
-description: AI / Programming / Data Analysis Study Blog
+author: 권아름
+role: AI 개발
+description: 데이터 수집부터 모델 검증까지, 직접 부딪히며 배운 과정을 기록합니다.
 markdown: kramdown
 permalink: /:categories/:title/
 plugins:

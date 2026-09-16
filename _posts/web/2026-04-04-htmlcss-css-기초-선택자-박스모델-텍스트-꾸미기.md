@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[HTML/CSS] CSS 기초 - 선택자, 박스모델, 텍스트 꾸미기"
+title: "[Web] HTML/CSS 기초 - 선택자, 박스모델, 텍스트 꾸미기"
 date: 2026-04-04 23:57:24 +0900
 categories: [web]
 tags: []

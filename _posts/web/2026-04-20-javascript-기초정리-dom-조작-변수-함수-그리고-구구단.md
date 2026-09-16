@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "JavaScript 기초정리 — DOM 조작, 변수, 함수, 그리고 구구단!"
+title: "[Web] JavaScript 기초정리 — DOM 조작, 변수, 함수, 그리고 구구단!"
 date: 2026-04-20 19:59:15 +0900
 categories: [web]
 tags: []

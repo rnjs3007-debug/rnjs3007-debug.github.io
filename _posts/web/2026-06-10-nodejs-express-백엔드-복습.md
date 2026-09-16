@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Node.js + Express 백엔드 복습"
+title: "[Web] Node.js + Express 백엔드 복습"
 date: 2026-06-10 11:21:41 +0900
 categories: [web]
 tags: []

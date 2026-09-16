@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "C언어 두 번째 수업"
+title: "[C언어] 두 번째 수업"
 date: 2026-03-24 10:00:00 +0900
 categories: [c-language]
 ---

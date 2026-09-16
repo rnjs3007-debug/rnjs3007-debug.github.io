@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Node.js EJS 템플릿 엔진 조사 보고서"
+title: "[Web] Node.js EJS 템플릿 엔진 조사 보고서"
 date: 2026-05-13 11:08:51 +0900
 categories: [web]
 tags: []

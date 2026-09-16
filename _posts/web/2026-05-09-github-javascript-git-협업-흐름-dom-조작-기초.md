@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[GitHub & JavaScript] Git 협업 흐름 & DOM 조작 기초"
+title: "[Web] GitHub & JavaScript - Git 협업 흐름 & DOM 조작 기초"
 date: 2026-05-09 13:00:42 +0900
 categories: [web]
 tags: []
